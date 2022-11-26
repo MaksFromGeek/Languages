@@ -1,0 +1,15 @@
+/Users/maksimpolanin/Desktop/Languages/Examples/Example002_HelloUser/bin/Debug/net7.0/Example002_HelloUser
+/Users/maksimpolanin/Desktop/Languages/Examples/Example002_HelloUser/bin/Debug/net7.0/Example002_HelloUser.deps.json
+/Users/maksimpolanin/Desktop/Languages/Examples/Example002_HelloUser/bin/Debug/net7.0/Example002_HelloUser.runtimeconfig.json
+/Users/maksimpolanin/Desktop/Languages/Examples/Example002_HelloUser/bin/Debug/net7.0/Example002_HelloUser.dll
+/Users/maksimpolanin/Desktop/Languages/Examples/Example002_HelloUser/bin/Debug/net7.0/Example002_HelloUser.pdb
+/Users/maksimpolanin/Desktop/Languages/Examples/Example002_HelloUser/obj/Debug/net7.0/Example002_HelloUser.csproj.AssemblyReference.cache
+/Users/maksimpolanin/Desktop/Languages/Examples/Example002_HelloUser/obj/Debug/net7.0/Example002_HelloUser.GeneratedMSBuildEditorConfig.editorconfig
+/Users/maksimpolanin/Desktop/Languages/Examples/Example002_HelloUser/obj/Debug/net7.0/Example002_HelloUser.AssemblyInfoInputs.cache
+/Users/maksimpolanin/Desktop/Languages/Examples/Example002_HelloUser/obj/Debug/net7.0/Example002_HelloUser.AssemblyInfo.cs
+/Users/maksimpolanin/Desktop/Languages/Examples/Example002_HelloUser/obj/Debug/net7.0/Example002_HelloUser.csproj.CoreCompileInputs.cache
+/Users/maksimpolanin/Desktop/Languages/Examples/Example002_HelloUser/obj/Debug/net7.0/Example002_HelloUser.dll
+/Users/maksimpolanin/Desktop/Languages/Examples/Example002_HelloUser/obj/Debug/net7.0/refint/Example002_HelloUser.dll
+/Users/maksimpolanin/Desktop/Languages/Examples/Example002_HelloUser/obj/Debug/net7.0/Example002_HelloUser.pdb
+/Users/maksimpolanin/Desktop/Languages/Examples/Example002_HelloUser/obj/Debug/net7.0/Example002_HelloUser.genruntimeconfig.cache
+/Users/maksimpolanin/Desktop/Languages/Examples/Example002_HelloUser/obj/Debug/net7.0/ref/Example002_HelloUser.dll
