@@ -1,18 +1,16 @@
 ﻿Console.WriteLine ("Введите любое трехзначное число:");
 int num = Convert.ToInt32(Console.ReadLine());
-int d = 0, k = 0;
+int d = 0;
 if (num > 99)
 {
-    k = num;
-    while (k >= 1000)
+    while (num >= 1000)
     {
-        k/=10;
-      //  d = k %10;
+        num /= 10;
     }
-    if (k >= 100 && k <= 999)
+    if (num >= 100 && num <= 999)
     {
-        k/=10;
-        d = k%10;
+        num /= 10;
+        d = num % 10;
     }
     Console.WriteLine($"{d}");
 }
