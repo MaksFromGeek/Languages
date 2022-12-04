@@ -3,25 +3,25 @@ int day = Convert.ToInt32(Console.ReadLine());
 switch (day)
 {
     case 1:
-        Console.WriteLine("Не выходной");
+        Console.WriteLine("Понедельник не выходной");
         break;
     case 2:
-        Console.WriteLine("Не выходной");
+        Console.WriteLine("Вторник не выходной");
         break; 
     case 3:
-        Console.WriteLine("Не выходной");
+        Console.WriteLine("Среда не выходной");
         break; 
     case 4:
-        Console.WriteLine("Не выходной");
+        Console.WriteLine("Четверг не выходной");
         break; 
     case 5:
-        Console.WriteLine("Не выходной");
+        Console.WriteLine("Пятница не выходной");
         break; 
     case 6:
-        Console.WriteLine("Выходной");
+        Console.WriteLine("Суббота выходной день");
         break; 
     case 7:
-        Console.WriteLine("Выходной");
+        Console.WriteLine("Выоскресенье выходной день");
         break; 
     default:
         Console.WriteLine("Не является днем недели");
