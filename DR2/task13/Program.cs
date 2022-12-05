@@ -1,19 +1,21 @@
-﻿Console.WriteLine("Введите трех-значное целое число");
-int number = Convert.ToInt32(Console.ReadLine());
-int k = 0, d = 0;
-if (number > 99)
+﻿Console.WriteLine("Введите любое целое число ");
+int num = Convert.ToInt32(Console.ReadLine());
+int d = 0;
+if (num > 99)
 {
-    k = number;
-    while (k >= 1000)
+    while (num >= 1000)
     {
-        k /= 10;
-        d = k % 10;
+        num /= 10;
     }
-Console.WriteLine($"The third number from the left is {d}");
+    if (num >=100 && num <=999)
+    {
+        d = num % 10;
+    }
+Console.WriteLine($"Третья цифра заданного числа: {d}");
 }
 else
 {
-   Console.WriteLine($"The number has fewer than 3 digits, sorry."); 
+   Console.WriteLine($"Введенное число не является трехзначным"); 
 }
 
 
