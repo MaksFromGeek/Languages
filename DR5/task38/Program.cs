@@ -26,7 +26,7 @@ void MaxMinArray(double[] arr) {
     }
     double result = max - min;
     string Diff = string.Join(", ", arr);
-    Console.Write($"[{Diff}] Разница максимального и минимального элемента массива равна = {result}");
+    Console.Write($"[{Diff}] Разница максимального и минимального элементов массива равна = {result}");
 }
 
     // foreach (int el in array) // этот цикл только для просмотра и тут нет индексов
