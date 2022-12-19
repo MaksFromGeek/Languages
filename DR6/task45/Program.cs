@@ -4,21 +4,22 @@
 // для k = 8 список будет выглядеть так: [-21 ,13, -8, 5, −3, 2, −1, 1, 0, 1, 1, 2, 3, 5, 8, 13, 21]
 
 System.Console.WriteLine("Введите число");
-double n = Convert.ToInt32(Console.ReadLine());
-double NegaFibonacci(int n)
+int n = Convert.ToInt32(Console.ReadLine());
+
+int NegaFibonacci(int n)
 {
-    if(n == -1) return 1;
+    if (n == -1) return 1;
     else if (n == -2) return -1;
-    else return NegaFibonacci(n + 2) - NegaFibonacci(n + 1); 
+    else return NegaFibonacci(n + 2) - NegaFibonacci(n + 1);
 }
-for (int j = -8; j <= -1; j++) System.Console.Write(NegaFibonacci(j)+",");
-System.Console.Write(0+",");
+for (int j = -n; j <= -1; j++) // считаем числа Негафибоначи 
+{ System.Console.Write(NegaFibonacci(j) + ","); }
+System.Console.Write(0 + ",");
 
-double Fibonacci(int n)
+int Fibonacci(int n)
 {
-    if(n == 1 || n == 2) return 1;
-    else return Fibonacci (n-1) + Fibonacci(n-2); 
+    if (n == 1 || n == 2) return 1;
+    else return Fibonacci(n-1) + Fibonacci(n-2); // в противном случае возвр фибоначи (n-1) + (n-2)
 }
-for (int i=1; i<=8; i++) System.Console.Write(Fibonacci(i)+",");
-
-
+for (int i = 1; i <= n; i++) //считаем числа фиб
+{ System.Console.Write(Fibonacci(i) + ","); }
