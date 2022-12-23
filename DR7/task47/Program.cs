@@ -7,7 +7,7 @@ Console.WriteLine("Введите количество строк двумерн
 double rows = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите количество столбцов двумерного массива");
 double cols = Convert.ToInt32(Console.ReadLine());
-double[,] array = new double[rows, cols];
+double[,] array = new double[(int)rows, (int)cols];
 FillArray(array);
 PrintArray(array);
 
@@ -15,7 +15,7 @@ void FillArray(double[,] array)
 {
     for (int i = 0; i < array.GetLength(0); i++)
         for (int j = 0; j < array.GetLength(1); j++)
-            array[i, j] = new Random().Next(-20,21);
+            array[i, j] = new Random().Next(0,21);
 }
 
 void PrintArray(double[,] array)
