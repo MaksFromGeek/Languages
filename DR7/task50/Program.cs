@@ -49,8 +49,5 @@ void Sootvetstvie(int[,] a)
     if (sootv == true)
     System.Console.WriteLine($"Число {element} находится на позиции [{b}, {c}] ");
     else System.Console.WriteLine($"Искомое число {element} в матрице отсутствует");
-    //         System.Console.WriteLine($"{i}");
-    //         else Console.WriteLine("Такое число отсутствует в нашей марице");
 }
-
 
