@@ -5,61 +5,52 @@
 // 8 4 2 4
 // 17 -> такого числа в массиве нет
 
-int rows = 3;
-int cols = 4;
+Console.WriteLine("Введите количество строк двумерного массива");
+int rows = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Введите количество столбцов двумерного массива");
+int cols = Convert.ToInt32(Console.ReadLine());
 int[,] array = new int[rows, cols];
-Console.WriteLine("Введите число от 1 до 10, расположенное в нашей матрице");
-int m = Convert.ToInt32(Console.ReadLine());
-// Console.WriteLine("Введите количество строк двумерного массива");
-// int rows = Convert.ToInt32(Console.ReadLine());
-// Console.WriteLine("Введите количество столбцов двумерного массива");
-// int cols = Convert.ToInt32(Console.ReadLine());
-// int[,] array = new int[rows, cols];
 FillArray(array);
 PrintArray(array);
+Sootvetstvie(array);
 
-void FillArray(int[,] array)
+void FillArray(int[,] arr)
 {
-    for (int i = 0; i < array.GetLength(0); i++)
-        for (int j = 0; j < array.GetLength(1); j++)
-            array[i, j] = new Random().Next(1, 10);
+    for (int i = 0; i < arr.GetLength(0); i++)
+        for (int j = 0; j < arr.GetLength(1); j++)
+            arr[i, j] = new Random().Next(1, 10);
 }
 
-void PrintArray(int[,] array)
+void PrintArray(int[,] arr)
 {
-    for (int i = 0; i < array.GetLength(0); i++)
+    for (int i = 0; i < arr.GetLength(0); i++)
     {
-        for (int j = 0; j < array.GetLength(1); j++)
-            Console.Write($"{array[i, j]}\t");
+        for (int j = 0; j < arr.GetLength(1); j++)
+        Console.Write($"{arr[i, j],5}\t");
         Console.WriteLine();
-        {
-            if (array[i, j] == m)
-            {
-                System.Console.Write(Convert.ToString(i, j));
-            }
-            else Console.Write("Такое число отсутствует в нашей марице");
-            Console.WriteLine();
-        }
     }
-
 }
 
-void PrintArray(int[,] array)
+void Sootvetstvie(int[,] a)
 {
-    for (int i = 0; i < array.GetLength(0); i++)
-    {
-        for (int j = 0; j < array.GetLength(1); j++)
-            Console.Write($"{array[i, j]}\t");
-        Console.WriteLine();
-        {
-            if (array[i, j] == m)
+    Console.WriteLine("Введите число от 1 до 10, расположенное в нашей матрице");
+    int element = Convert.ToInt32(Console.ReadLine());
+    int b = 0;
+    int c = 0;
+    bool sootv = false;
+    for (int i = 0; i < a.GetLength(0); i++)
+        for (int j = 0; j < a.GetLength(1); j++)
+            if (a[i, j] == element) 
             {
-                System.Console.Write(Convert.ToString(i, j));
+                sootv = true;
+                b = i;
+                c = j;
             }
-            else Console.Write("Такое число отсутствует в нашей марице");
-            Console.WriteLine();
-        }
-    }
+    if (sootv == true)
+    System.Console.WriteLine($"Число {element} находится на позиции [{b}, {c}] ");
+    else System.Console.WriteLine($"Искомое число {element} в матрице отсутствует");
+    //         System.Console.WriteLine($"{i}");
+    //         else Console.WriteLine("Такое число отсутствует в нашей марице");
 }
 
 
