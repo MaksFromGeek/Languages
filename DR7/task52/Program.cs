@@ -30,14 +30,13 @@ void PrintArray(int[,] array)
         Console.WriteLine(); 
     } 
 } 
- 
+
 void arithmetic(int[,] array) 
 { 
     double[] arr = new double [cols]; 
-    double sum = 0; 
     for (int i = 0; i < array.GetLength(1); i++) 
-    { 
-        sum = 0; 
+    {
+        double sum = 0; 
         for (int j = 0; j < array.GetLength(0); j++) 
         { 
             sum = (sum + array[j, i]); 

@@ -50,4 +50,3 @@ void Sootvetstvie(int[,] a)
     System.Console.WriteLine($"Число {element} находится на позиции [{b}, {c}] ");
     else System.Console.WriteLine($"Искомое число {element} в матрице отсутствует");
 }
-
